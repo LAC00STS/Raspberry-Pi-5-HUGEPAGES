@@ -34,7 +34,7 @@ Additional pop up messages will be prompted to you requiring a yes or no answer.
 
 ## Build the kernel
 
-`make -j4 Image.gz modules dtbs`
+`make -j4 Image.gz modules dtbs`  
 `sudo make modules_install`
 
 ## Install the kernel
@@ -48,16 +48,16 @@ sudo cp arch/arm64/boot/Image.gz /boot/firmware/$KERNEL.img
 ## Reboot and kernel will be installed and active
 
 You can verify that HUGEPAGE support is enabled by running the command
-`grep -i huge /proc/meminfo`
+`grep -i huge /proc/meminfo`  
 Displays the number of HUGEPAGES currently allocated
-`grep HugePages_Total /proc/meminfo`
+`grep HugePages_Total /proc/meminfo`  
 
 You can further configure HUGEPAGE allocation and size as you would on any other Linux system.
 
 # HUGEPAGE Allocation - 1 GB Pages - For XMRIG
 
 Add to the end of line of file - Sets 3 - 1 GB pages at boot
-`sudo nano /boot/cmdline.txt`
+`sudo nano /boot/cmdline.txt`  
 `default_hugepagesz=2M hugepagesz=1G hugepages=3`
 
 
