@@ -4,6 +4,10 @@ Enable HUGEPAGE support on the Raspberry Pi 5!
 
 HUGEPAGE support is not enabled by default on Raspberry Pi.  To enable it you must recompile the Linux kernel.  I have provided a prebuilt kernel with HUGEPAGE support in this repo. [Coming soon] If you wish to build the kernel yourself follow these instructions.  This was performed on a Raspberry Pi 5 8GB.  
 
+# Use prebuilt kernel
+
+`kernel_2712.img` is the Raspberry Pi 5 kernel with HP support
+
 ## Install dependencies
 `sudo apt update`  
 `sudo apt install -y git build-essential bc bison kmod cpio flex libncurses5-dev libelf-dev libssl-dev`
